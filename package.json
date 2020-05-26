@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Repo to demonstrate the various patterns for handling Asnyc in JS",
   "main": "index.js",
+  "type": "module" ,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,5 +15,8 @@
     "Observables"
   ],
   "author": "ladvishal1985#gmail.com",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "rxjs": "^6.5.5"
+  }
 }
