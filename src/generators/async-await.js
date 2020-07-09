@@ -9,9 +9,9 @@ function getFile(file) {
 }
 
 async function getAllfiles() {
-    var p1 = getFile("file1");
-    var p2 = getFile("file2");
-    var p3 = getFile("file3");
+    var p1 = getFile("url-1");
+    var p2 = getFile("url-2");
+    var p3 = getFile("url-3");
     utils.output(await p1)
     utils.output(await p2)
     utils.output(await p3)

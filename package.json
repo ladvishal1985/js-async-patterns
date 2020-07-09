@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Repo to demonstrate the various patterns for handling Asnyc in JS",
   "main": "index.js",
-  "type": "module" ,
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,10 @@
   "author": "ladvishal1985#gmail.com",
   "license": "ISC",
   "dependencies": {
+    "@f5io/csp": "^1.0.11",
+    "cispy": "^2.0.1",
+    "enquirer": "^2.3.6",
+    "js-csp": "^1.0.1",
     "rxjs": "^6.5.5"
   }
 }

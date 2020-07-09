@@ -3,9 +3,9 @@ const utils = require('../utils');
  
 var responses = {}; //Cache the responses
 
-function getFile(file) {
+function getFile(file, cb) {
 	utils.mockAJAXRequest(file, (text) => {
-		fileReceived(file, text);
+		cb(file, text);
 	});
 }
 
@@ -25,6 +25,6 @@ function fileReceived(file, text){
 }
 // request all files at once
 
-getFile("url-1");
-getFile("url-2");
-getFile("url-3");
+getFile("url-1", fileReceived);
+getFile("url-2", fileReceived);
+getFile("url-3", fileReceived);

@@ -6,9 +6,9 @@ function getFile(file) {
 		utils.mockAJAXRequest(file, resolve);
 	});
 }
-var p1 = getFile('file1')
-var p2 = getFile('file2')
-var p3 = getFile('file3')
+var p1 = getFile('url-1')
+var p2 = getFile('url-2')
+var p3 = getFile('url-3')
 
 Promise.all([p1, p2, p3]).then((data) => {
 	data.forEach((result) => {

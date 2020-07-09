@@ -23,10 +23,9 @@ function gnRunner(genFn) {
 }
 
 function *getAllfiles() {
-    var p1 = getFile("file1");
-    var p2 = getFile("file2");
-    var p3 = getFile("file3");
-
+    var p1 = getFile("url-1");
+    var p2 = getFile("url-2");
+    var p3 = getFile("url-3");
 
     utils.output(yield p1)
     utils.output(yield p2)

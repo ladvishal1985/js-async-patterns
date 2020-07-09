@@ -1,21 +1,18 @@
 const utils = require('../utils');
 
-
-
 function getFile(file) {
-	return new Promise(function(resolve){
-		utils.mockAJAXRequest(file,resolve);
+	return new Promise(function (resolve) {
+		utils.mockAJAXRequest(file, resolve);
 	});
 }
 
-["file1", "file2", "file3"]
+["url-1", "url-2", "url-3"]
 	.map(getFile)
-	.reduce(function combin(chain, pr) {
-		return chain.then(function () {
+	.reduce((chain, pr) => {
+		return chain.then(() => {
 			return pr
 		}).then(utils.output)
 	}, Promise.resolve())
-	.then(()=>{
-		output("Complete!")
+	.then(() => {
+		utils.output("Complete!")
 	})
-
